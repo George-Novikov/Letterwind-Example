@@ -1,0 +1,4 @@
+spring:
+  application.name: Letterwind-Consumer
+server:
+  port: 8082

@@ -1,13 +1,15 @@
-package com.georgen.letterwindproducer.model;
+package com.georgen.letterwindconsumer.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.georgen.letterwind.api.annotations.LetterwindMessage;
 
 import java.time.LocalDateTime;
 
+/**
+ * This class MUST be exactly the same as in the producer. This also applies to the class name.
+ * For more information, see the "Leterwind-Producer" project.
+ * */
 @LetterwindMessage
-@JsonIgnoreProperties(ignoreUnknown = true)
-public class Message {
+public class SampleMessage {
     private int id;
     private LocalDateTime creationDate;
     private String title;

@@ -5,7 +5,6 @@ plugins {
 }
 
 group = 'com.georgen'
-version = '0.0.1-SNAPSHOT'
 
 java {
     toolchain {
@@ -18,8 +17,8 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.george-n:letterwind:1.0.0'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'com.george-n:letterwind:1.0.0'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
